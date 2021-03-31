@@ -2,5 +2,6 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "The Exercist"
 theme = "book"
+enableGitInfo = true
 [params]
     BookMenuBundle = "/menu"
