@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Exercist</title>
+    <title>Introduction on The Exercist</title>
     <link>http://example.org/</link>
-    <description>Recent content on The Exercist</description>
+    <description>Recent content in Introduction on The Exercist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -22,6 +22,17 @@
       
       <guid>http://example.org/docs/cc/</guid>
       <description>Sell Covered Calls Strategy #  More stuff goes here.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/markdown/</guid>
+      <description>Heading 1 #  Heading 2 #  Google  Blockquote
+  Item 1 Item 2 World domination Item 4   One Two THree   Some code not code.
+Block of text. Another line. </description>
     </item>
     
   </channel>
