@@ -5,19 +5,21 @@
   <meta name="generator" content="Hugo 0.81.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sell Covered Calls Strategy #  More stuff goes here.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="" />
-<meta property="og:description" content="Sell Covered Calls Strategy #  More stuff goes here." />
+<meta name="description" content="Sell Covered Calls Strategy #  This strategy is very simple, and it&rsquo;s a good starting point for someone to begin trading options.
+You probably already own some stocks, like Tesla, I don&rsquo;t know. It&rsquo;s great to own stocks, but it&rsquo;s not always great, because they sometimes tend to go down or trade sideways. So, we let your stocks be in the bull market, and sell some options in bear or sideways market.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Selling Covered Calls" />
+<meta property="og:description" content="Sell Covered Calls Strategy #  This strategy is very simple, and it&rsquo;s a good starting point for someone to begin trading options.
+You probably already own some stocks, like Tesla, I don&rsquo;t know. It&rsquo;s great to own stocks, but it&rsquo;s not always great, because they sometimes tend to go down or trade sideways. So, we let your stocks be in the bull market, and sell some options in bear or sideways market." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/docs/cc/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://the-exercist.com/docs/cc/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2021-03-31T16:37:33-04:00" />
 
-<title>Cc | The Exercist</title>
+<title>Selling Covered Calls | The Exercist</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.2bc2364a4a4b31f0ec1debecf0a8f90a840821f143dfe1ac6a0f7cbcbdcf64ac.css" integrity="sha256-K8I2SkpLMfDsHevs8Kj5CoQIIfFD3&#43;Gsag98vL3PZKw=">
-<script defer src="/en.search.min.1a52caafced3d783b4a3e66a17496347e2ef1d1be95d463cffe579de3a9515cd.js" integrity="sha256-GlLKr87T14O0o&#43;ZqF0ljR&#43;LvHRvpXUY8/&#43;V53jqVFc0="></script>
+<script defer src="/en.search.min.a05a3c9cb22f5cf5c167c75115b8487e63914ea003c663ad3148cb50a10a91f2.js" integrity="sha256-oFo8nLIvXPXBZ8dRFbhIfmORTqADxmOtMUjLUKEKkfI="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -57,9 +59,12 @@ https://github.com/alex-shpak/hugo-book
 
 
   <ul>
-<li><a href="/docs/">Strategies</a></li>
+<li><a href="/docs/">Strategies</a>
+<ul>
 <li><a href="/docs/bnh/">Buy and Hold</a></li>
 <li><a href="/docs/cc/"class=active>Covered Calls</a></li>
+</ul>
+</li>
 </ul>
 
 
@@ -91,7 +96,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Cc</strong>
+  <strong>Selling Covered Calls</strong>
 
   <label for="toc-control">
     
@@ -105,7 +110,15 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#entry">Entry</a>
+      <ul>
+        <li><a href="#stock-trend">Stock Trend</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -120,7 +133,25 @@ https://github.com/alex-shpak/hugo-book
   Sell Covered Calls Strategy
   <a class="anchor" href="#sell-covered-calls-strategy">#</a>
 </h1>
-<p>More stuff goes here.</p>
+<p>This strategy is very simple, and it&rsquo;s a good starting point for someone to begin trading options.</p>
+<p>You probably already own some stocks, like Tesla, I don&rsquo;t know. It&rsquo;s great to own stocks, but it&rsquo;s not always great, because they sometimes tend to go down or trade sideways. So, we let your stocks be in the bull market, and sell some options in bear or sideways market.</p>
+<h2 id="entry">
+  Entry
+  <a class="anchor" href="#entry">#</a>
+</h2>
+<p>We are looking for two things, stock trend and implied volatility of your stock. We enter the covered call position if two things are true:</p>
+<ul>
+<li>Stock is trending down or sideways</li>
+<li>Implied Volatility is high</li>
+</ul>
+<p>Let&rsquo;s look at these two in more detail.</p>
+<h3 id="stock-trend">
+  Stock Trend
+  <a class="anchor" href="#stock-trend">#</a>
+</h3>
+<p>Stock trend can be determined using technical indicators, or just be looking at the one year chart. One useful indicator is MACD (Moving Average Convergence/Divergence).</p>
+<p>Another interesting approach is to look at the price chart with IV bands. This will give you a good idea where the stock is heading vs. what people think where it&rsquo;s heading. If the price is consistently above the top IV bar, it means that the calls that were sold under assumption that they will expire worthless are actually get assigned. This is not what we want. We want to sell a call and we want it to actually expire worthless. So, we want the price to wobble between IV bands, or to be close to the lower band.</p>
+<p>TODO: more technical indicators.</p>
 </article>
  
       
@@ -155,7 +186,15 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#entry">Entry</a>
+      <ul>
+        <li><a href="#stock-trend">Stock Trend</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
  

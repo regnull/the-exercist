@@ -2,22 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/docs/bnh/</loc>
+    <loc>http://the-exercist.com/docs/second/second/</loc>
+  </url><url>
+    <loc>http://the-exercist.com/docs/bnh/</loc>
     <lastmod>2021-03-31T16:37:33-04:00</lastmod>
   </url><url>
-    <loc>http://example.org/docs/cc/</loc>
-    <lastmod>2021-03-31T16:37:33-04:00</lastmod>
+    <loc>http://the-exercist.com/categories/</loc>
   </url><url>
-    <loc>http://example.org/docs/markdown/</loc>
+    <loc>http://the-exercist.com/docs/</loc>
+    <lastmod>2021-03-31T16:59:13-04:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
-  </url><url>
-    <loc>http://example.org/docs/</loc>
-    <lastmod>2021-03-31T16:37:33-04:00</lastmod>
-  </url><url>
-    <loc>http://example.org/</loc>
+    <loc>http://the-exercist.com/</loc>
     <lastmod>2021-03-31T16:46:09-04:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://the-exercist.com/docs/markdown/</loc>
+    <lastmod>2021-03-31T16:59:13-04:00</lastmod>
+  </url><url>
+    <loc>http://the-exercist.com/docs/basics/</loc>
+  </url><url>
+    <loc>http://the-exercist.com/docs/cc/</loc>
+    <lastmod>2021-03-31T16:37:33-04:00</lastmod>
+  </url><url>
+    <loc>http://the-exercist.com/tags/</loc>
   </url>
 </urlset>

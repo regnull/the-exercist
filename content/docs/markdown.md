@@ -1,3 +1,6 @@
+---
+title: Markdown Reference
+---
 # Heading 1
 ## Heading 2
 [Google](https://google.com)
@@ -22,3 +25,8 @@
 Block of text.
 Another line.
 ```
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |

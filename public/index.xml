@@ -2,37 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on The Exercist</title>
-    <link>http://example.org/</link>
+    <link>http://the-exercist.com/</link>
     <description>Recent content in Introduction on The Exercist</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://the-exercist.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://example.org/docs/bnh/</link>
+      <link>http://the-exercist.com/docs/second/second/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/bnh/</guid>
+      <guid>http://the-exercist.com/docs/second/second/</guid>
+      <description>Second level #  Write somethig smart.</description>
+    </item>
+    
+    <item>
+      <title>Buy and Hold (more or less)</title>
+      <link>http://the-exercist.com/docs/bnh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://the-exercist.com/docs/bnh/</guid>
       <description>Buy and Hold Strategy #  Some stuff goes here.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://example.org/docs/cc/</link>
+      <title>Markdown Reference</title>
+      <link>http://the-exercist.com/docs/markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/cc/</guid>
-      <description>Sell Covered Calls Strategy #  More stuff goes here.</description>
+      <guid>http://the-exercist.com/docs/markdown/</guid>
+      <description>Heading 1 #  Heading 2 #  Google  Blockquote
+  Item 1 Item 2 World domination Item 4   One Two THree   Some code not code.
+Block of text. Another line.    Syntax Description     Header Title   Paragraph Text    </description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://example.org/docs/markdown/</link>
+      <title>Selling Covered Calls</title>
+      <link>http://the-exercist.com/docs/basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/markdown/</guid>
-      <description>Heading 1 #  Heading 2 #  Google  Blockquote
-  Item 1 Item 2 World domination Item 4   One Two THree   Some code not code.
-Block of text. Another line. </description>
+      <guid>http://the-exercist.com/docs/basics/</guid>
+      <description>The Basics #  What Options Are #   Option contract In the money/out of the money Intrinsic vs. Extrinsic Value Execution Things that define option price  </description>
+    </item>
+    
+    <item>
+      <title>Selling Covered Calls</title>
+      <link>http://the-exercist.com/docs/cc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://the-exercist.com/docs/cc/</guid>
+      <description>Sell Covered Calls Strategy #  This strategy is very simple, and it&amp;rsquo;s a good starting point for someone to begin trading options.
+You probably already own some stocks, like Tesla, I don&amp;rsquo;t know. It&amp;rsquo;s great to own stocks, but it&amp;rsquo;s not always great, because they sometimes tend to go down or trade sideways. So, we let your stocks be in the bull market, and sell some options in bear or sideways market.</description>
     </item>
     
   </channel>
