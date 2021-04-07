@@ -4,13 +4,15 @@ title: IV Bands
 
 # IV Bands
 
-Many people are familiar with [Bollinger bands](https://en.wikipedia.org/wiki/Bollinger_Bands), which are drawn two standard deviations from simple moving average on a stock price chart. Statistically, stock price would be between bands 95% of the time if the price movement were to be random. Therefore, if the stock price crosses one of the bands, it might indicate that the movement is not random, and it can be used to predict price trend.
+Many people are familiar with [Bollinger bands](https://en.wikipedia.org/wiki/Bollinger_Bands), which are drawn two standard deviations from simple moving average on a stock price chart. Assuming that the price movements are competely random, stock price would fall between bands 95% of the time. In practice it's not quite the case, and we can assume that the things are not quite random when the price crosses the top or bottom band. This can be interpreted as a buy or sell signal in a trading strategy.
 
-Bollinger bands are useful because they show price relative to the range defined using historical data, based on past price movements. What if we were to define the range using implied volatility instead? This would show us where the stock price is relative to where the market thought it would be, based on the implied volatility.
+As useful as Bollinger bands are, they are backward-looking, because the range is computed using historical price movements. If we were to guess where the market would be some time in the future, we could use the implied volatility (IV) based on the option pricing data. 
+
+IV bands show where the stock is *today* relative to where market expected it to be *some time ago*.
 
 The range we draw is based on the probability, which roughly translates into option delta. So here is the way to interpret the chart:
 
-![Example image](/aapl_iv_bands.png)
+![Example image](/images/aapl_iv_bands.png)
 
 Assume we draw IV bands using time shift of 20 days and delta of 30%. The bands show us where the market thought the price of the stock today would be, as of 20 days ago, vs. where the stock really is.
 
