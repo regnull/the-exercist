@@ -4,11 +4,15 @@ title: IV Bands
 
 # IV Bands
 
-Many people are familiar with [Bollinger bands](https://en.wikipedia.org/wiki/Bollinger_Bands), which are drawn two standard deviations from simple moving average on a stock price chart. Assuming that the price movements are competely random, stock price would fall between bands 95% of the time. In practice it's not quite the case, and we can assume that the things are not quite random when the price crosses the top or bottom band. This can be interpreted as a buy or sell signal in a trading strategy.
+Many people are familiar with [Bollinger bands](https://en.wikipedia.org/wiki/Bollinger_Bands), which are drawn two standard deviations from the simple moving average on a stock price chart. Assuming that the price movements are competely random, stock price would fall between the bands 95% of the time. In practice it's not quite the case, and we can assume that the things are not quite random when the price crosses the top or bottom band. This can be interpreted as a buy or a sell signal in a trading strategy.
 
-As useful as Bollinger bands are, they are backward-looking, because the range is computed using historical price movements. If we were to guess where the market would be some time in the future, we could use the implied volatility (IV) based on the option pricing data. 
+Bollinger bands are based on the historical stock movements, so in this sense they are backward-looking. Imagine that some news announcement is expected, for example, the result of a drug trial. The market expects stock to move significantly, either in positive or negative direction. It would be great to compare the expected range with the actual stock movement after the news come out. This is what IV bands are about - they show the expected stock movement, based on implied volatility (IV) with the actual price. 
 
-IV bands show where the stock is *today* relative to where market expected it to be *some time ago*.
+To do this comparison, we need to draw the expected range at some point in the future. Imaging that based on implied volatility we expect stock to move 0.5 in the next 20 days. We would draw IV lines on the chart 20 days in the future, $0.5 apart from the current stock price.
+
+$0.5 price movement expectation means that the standard deviation is $0.5. Instead of the standard deviation, we could use some specific probability number, for example, draw the line so that the probability of the price being above this line would be, let's say 10%. In fact, this might be a better approach, because the probability numbers roughly translate into option delta. 
+
+Let's say I sold an OTM call option with 0.1 delta, expiring 20 days in the future. If I were to draw lines based on 10% probability (which is roughly 0.1 delta), it would be easy to say when the option is assigned - this would happen if the price were to cross the top IV band.
 
 The range we draw is based on the probability, which roughly translates into option delta. So here is the way to interpret the chart:
 
